@@ -22,12 +22,18 @@ import {
 
 const fadeUp = {
   hidden: { opacity: 0, y: 34 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: "easeOut" },
+  },
 };
 
 const stagger = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.09, delayChildren: 0.08 } },
+  show: {
+    transition: { staggerChildren: 0.09, delayChildren: 0.08 },
+  },
 };
 
 export default function App() {
@@ -82,7 +88,7 @@ export default function App() {
 
   const makerworldProjects = [
     {
-      title: "Self‑Locking Rope Pulley",
+      title: "Self-Locking Rope Pulley",
       subtitle: "3D printed cam block",
       image: "/makerworld/rope-pulley-main.gif",
       link: "https://makerworld.com/pl/models/2686311-self-locking-rope-pulley-3d-printed-cam-block#profileId-2975890",
@@ -120,7 +126,7 @@ export default function App() {
             <img
               src="/ign3d-logo.png"
               alt="IGN3D logo"
-              className="h-16 sm:h-24 w-auto max-w-[280px] object-contain drop-shadow-[0_0_28px_rgba(239,68,68,0.55)]"
+              className="h-24 sm:h-36 w-auto max-w-[78vw] sm:max-w-[420px] object-contain drop-shadow-[0_0_34px_rgba(239,68,68,0.65)]"
             />
 
             <a
@@ -158,12 +164,13 @@ export default function App() {
                 variants={fadeUp}
                 className="mt-7 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl"
               >
-                Tworzymy funkcjonalne wydruki 3D, prototypy, części techniczne i elementy na zamówienie.
-                Od prostego uchwytu po dopasowany komponent do warsztatu, auta, elektroniki lub wnętrza.
+                Tworzymy funkcjonalne wydruki 3D, prototypy, części techniczne
+                i elementy na zamówienie. Od prostego uchwytu po dopasowany
+                komponent do warsztatu, auta, elektroniki lub wnętrza.
               </motion.p>
 
               <motion.div variants={fadeUp} className="mt-9 max-w-xl">
-                <div className="rounded-[28px] border border-red-400/20 bg-gradient-to-r from-red-500 to-red-700 shadow-2xl shadow-red-500/20 overflow-hidden">
+                <div className="w-full rounded-[28px] border border-red-400/20 bg-gradient-to-r from-red-500 to-red-700 shadow-2xl shadow-red-500/20 overflow-hidden">
                   <button
                     type="button"
                     onClick={() => setContactOpen(!contactOpen)}
@@ -250,18 +257,20 @@ export default function App() {
               <div className="absolute inset-0 bg-red-400/20 blur-3xl rounded-full" />
               <div className="relative rounded-[36px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-5 shadow-2xl shadow-black/30 overflow-hidden">
                 <div className="rounded-[28px] bg-gradient-to-br from-slate-950 via-red-950/40 to-slate-900 border border-white/10 p-6 min-h-[460px] flex flex-col justify-between">
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start gap-4">
                     <div className="flex flex-col gap-1">
                       <span className="text-xs uppercase tracking-[0.28em] text-red-200/70 font-bold">
                         oferta Ign3d
                       </span>
                       <h2 className="mt-2 text-3xl font-black leading-tight">
                         Od projektu
-                        <span className="block text-red-300">do gotowego wydruku</span>
+                        <span className="block text-red-300">
+                          do gotowego wydruku
+                        </span>
                       </h2>
                     </div>
 
-                    <div className="w-14 h-14 rounded-2xl bg-red-500 text-white flex items-center justify-center">
+                    <div className="w-14 h-14 rounded-2xl bg-red-500 text-white flex items-center justify-center shrink-0">
                       <Layers3 className="w-7 h-7" />
                     </div>
                   </div>
@@ -281,8 +290,10 @@ export default function App() {
                             Projektowanie modeli 3D
                           </h3>
                           <p className="mt-4 text-slate-300 leading-8 text-[15px] sm:text-base max-w-md">
-                            Tworzymy modele na podstawie szkiców, rysunków technicznych, wymiarów,
-                            zdjęć lub rzeczywistego elementu. Pomagamy przejść od pomysłu do pliku gotowego do druku.
+                            Tworzymy modele na podstawie szkiców, rysunków
+                            technicznych, wymiarów, zdjęć lub rzeczywistego
+                            elementu. Pomagamy przejść od pomysłu do pliku
+                            gotowego do druku.
                           </p>
                         </div>
                       </div>
@@ -302,8 +313,10 @@ export default function App() {
                             Drukowanie w technologii FDM
                           </h3>
                           <p className="mt-4 text-slate-300 leading-8 text-[15px] sm:text-base max-w-md">
-                            Wykonujemy trwałe i funkcjonalne wydruki z materiałów takich jak PLA, PETG,
-                            ABS, ASA oraz TPU — dobierając materiał do zastosowania, obciążenia i warunków pracy.
+                            Wykonujemy trwałe i funkcjonalne wydruki z
+                            materiałów takich jak PLA, PETG, ABS, ASA oraz TPU —
+                            dobierając materiał do zastosowania, obciążenia i
+                            warunków pracy.
                           </p>
                         </div>
                       </div>
@@ -338,20 +351,43 @@ export default function App() {
             viewport={{ once: true, amount: 0.25 }}
             className="grid md:grid-cols-3 gap-4"
           >
-            <motion.div variants={fadeUp} whileHover={{ y: -6, scale: 1.02 }} className="rounded-3xl border border-white/10 bg-white/[0.05] p-6">
+            <motion.div
+              variants={fadeUp}
+              whileHover={{ y: -6, scale: 1.02 }}
+              className="rounded-3xl border border-white/10 bg-white/[0.05] p-6"
+            >
               <Clock3 className="w-8 h-8 text-red-200" />
               <h3 className="mt-5 text-xl font-black">Szybka wycena</h3>
-              <p className="mt-2 text-slate-400 leading-relaxed">Wyślij opis, zdjęcie albo plik — wrócimy z konkretną propozycją wykonania.</p>
+              <p className="mt-2 text-slate-400 leading-relaxed">
+                Wyślij opis, zdjęcie albo plik — wrócimy z konkretną propozycją
+                wykonania.
+              </p>
             </motion.div>
-            <motion.div variants={fadeUp} whileHover={{ y: -6, scale: 1.02 }} className="rounded-3xl border border-white/10 bg-white/[0.05] p-6">
+
+            <motion.div
+              variants={fadeUp}
+              whileHover={{ y: -6, scale: 1.02 }}
+              className="rounded-3xl border border-white/10 bg-white/[0.05] p-6"
+            >
               <ShieldCheck className="w-8 h-8 text-red-200" />
               <h3 className="mt-5 text-xl font-black">Funkcjonalne wydruki</h3>
-              <p className="mt-2 text-slate-400 leading-relaxed">Stawiamy na praktyczne zastosowanie, trwałość i dopasowanie do realnego problemu.</p>
+              <p className="mt-2 text-slate-400 leading-relaxed">
+                Stawiamy na praktyczne zastosowanie, trwałość i dopasowanie do
+                realnego problemu.
+              </p>
             </motion.div>
-            <motion.div variants={fadeUp} whileHover={{ y: -6, scale: 1.02 }} className="rounded-3xl border border-white/10 bg-white/[0.05] p-6">
+
+            <motion.div
+              variants={fadeUp}
+              whileHover={{ y: -6, scale: 1.02 }}
+              className="rounded-3xl border border-white/10 bg-white/[0.05] p-6"
+            >
               <Upload className="w-8 h-8 text-red-200" />
               <h3 className="mt-5 text-xl font-black">Od pomysłu do części</h3>
-              <p className="mt-2 text-slate-400 leading-relaxed">Możesz mieć gotowy model albo tylko pomysł — pomożemy przejść przez cały proces.</p>
+              <p className="mt-2 text-slate-400 leading-relaxed">
+                Możesz mieć gotowy model albo tylko pomysł — pomożemy przejść
+                przez cały proces.
+              </p>
             </motion.div>
           </motion.div>
         </section>
@@ -365,9 +401,14 @@ export default function App() {
             className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-8"
           >
             <div>
-              <p className="text-red-200 font-bold uppercase tracking-[0.25em] text-sm">zastosowania</p>
-              <h2 className="mt-3 text-4xl sm:text-5xl font-black tracking-[-0.04em]">Dla kogo druk 3D?</h2>
+              <p className="text-red-200 font-bold uppercase tracking-[0.25em] text-sm">
+                zastosowania
+              </p>
+              <h2 className="mt-3 text-4xl sm:text-5xl font-black tracking-[-0.04em]">
+                Dla kogo druk 3D?
+              </h2>
             </div>
+
             <p className="text-slate-400 max-w-xl leading-relaxed">
               Druk 3D sprawdza się tam, gdzie gotowe rozwiązania są za drogie,
               niedostępne albo po prostu nie pasują do konkretnego zastosowania.
@@ -383,6 +424,7 @@ export default function App() {
           >
             {useCases.map((item) => {
               const Icon = item.icon;
+
               return (
                 <motion.div
                   key={item.title}
@@ -394,7 +436,9 @@ export default function App() {
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="mt-5 text-2xl font-black">{item.title}</h3>
-                  <p className="mt-3 text-slate-400 leading-relaxed">{item.text}</p>
+                  <p className="mt-3 text-slate-400 leading-relaxed">
+                    {item.text}
+                  </p>
                 </motion.div>
               );
             })}
@@ -413,7 +457,9 @@ export default function App() {
 
             <div className="relative z-10 grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-center">
               <div>
-                <p className="text-red-200 font-bold uppercase tracking-[0.25em] text-sm">makerworld</p>
+                <p className="text-red-200 font-bold uppercase tracking-[0.25em] text-sm">
+                  makerworld
+                </p>
 
                 <h2 className="mt-4 text-4xl sm:text-5xl font-black tracking-[-0.05em] leading-tight">
                   Projekty Ign3d
@@ -421,8 +467,10 @@ export default function App() {
                 </h2>
 
                 <p className="mt-6 text-slate-300 text-lg leading-relaxed max-w-xl">
-                  Publikujemy modele 3D, organizery, części użytkowe oraz projekty tworzone dla społeczności makerów.
-                  To miejsce, gdzie możesz zobaczyć nasze podejście do projektowania i jakości wykonania.
+                  Publikujemy modele 3D, organizery, części użytkowe oraz
+                  projekty tworzone dla społeczności makerów. To miejsce, gdzie
+                  możesz zobaczyć nasze podejście do projektowania i jakości
+                  wykonania.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-3">
@@ -456,11 +504,11 @@ export default function App() {
                     <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-60" />
 
                     <div className="relative z-10">
-                      <div className="h-44 rounded-2xl border border-white/10 overflow-hidden bg-gradient-to-br from-red-500/25 via-red-950/40 to-black/40 relative flex items-center justify-center">
+                      <div className="h-56 sm:h-64 rounded-2xl border border-white/10 overflow-hidden bg-gradient-to-br from-red-500/25 via-red-950/40 to-black/40 relative flex items-center justify-center">
                         <img
                           src={item.image}
                           alt={item.title}
-                          className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-110 transition duration-500"
+                          className="absolute inset-0 w-full h-full object-contain p-2 opacity-95 group-hover:scale-105 transition duration-500"
                         />
 
                         <div
@@ -478,8 +526,12 @@ export default function App() {
 
                       <div className="mt-5 flex items-start justify-between gap-3">
                         <div>
-                          <h3 className="font-black text-lg leading-tight">{item.title}</h3>
-                          <p className="text-sm text-slate-400 mt-1">{item.subtitle}</p>
+                          <h3 className="font-black text-lg leading-tight">
+                            {item.title}
+                          </h3>
+                          <p className="text-sm text-slate-400 mt-1">
+                            {item.subtitle}
+                          </p>
                         </div>
 
                         <div className="w-10 h-10 rounded-xl bg-red-500/20 border border-red-500/20 flex items-center justify-center text-red-200 font-black shrink-0">
@@ -506,9 +558,14 @@ export default function App() {
             className="grid lg:grid-cols-2 gap-8 items-center"
           >
             <motion.div variants={fadeUp}>
-              <p className="text-red-200 font-bold uppercase tracking-[0.25em] text-sm">proces</p>
-              <h2 className="mt-3 text-4xl sm:text-5xl font-black tracking-[-0.04em]">Jak wygląda współpraca?</h2>
+              <p className="text-red-200 font-bold uppercase tracking-[0.25em] text-sm">
+                proces
+              </p>
+              <h2 className="mt-3 text-4xl sm:text-5xl font-black tracking-[-0.04em]">
+                Jak wygląda współpraca?
+              </h2>
             </motion.div>
+
             <motion.div variants={stagger} className="grid gap-3">
               {process.map((item, index) => (
                 <motion.div
@@ -540,8 +597,9 @@ export default function App() {
                   Masz pomysł na wydruk?
                 </h2>
                 <p className="mt-4 text-white/80 text-lg leading-relaxed">
-                  Skontaktuj się z Ign3d. Wyślij opis, wymiary, zdjęcie albo plik 3D —
-                  przygotujemy wycenę i doradzimy najlepsze rozwiązanie.
+                  Skontaktuj się z Ign3d. Wyślij opis, wymiary, zdjęcie albo
+                  plik 3D — przygotujemy wycenę i doradzimy najlepsze
+                  rozwiązanie.
                 </p>
               </div>
 
@@ -553,6 +611,7 @@ export default function App() {
                   Zadzwoń: {contact.phone}
                   <ArrowRight className="w-5 h-5" />
                 </a>
+
                 <a
                   href={`mailto:${contact.email}`}
                   className="rounded-2xl bg-white/15 border border-white/20 px-6 py-4 font-black flex items-center justify-between hover:bg-white/25 transition"
@@ -560,6 +619,7 @@ export default function App() {
                   {contact.email}
                   <ArrowRight className="w-5 h-5" />
                 </a>
+
                 <a
                   href={`https://wa.me/${contact.whatsapp}`}
                   target="_blank"
