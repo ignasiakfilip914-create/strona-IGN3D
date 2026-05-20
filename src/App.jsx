@@ -126,7 +126,7 @@ export default function App() {
             <img
               src="/ign3d-logo.png"
               alt="IGN3D logo"
-              className="h-24 sm:h-36 w-auto max-w-[78vw] sm:max-w-[420px] object-contain drop-shadow-[0_0_34px_rgba(239,68,68,0.65)]"
+              className="h-32 sm:h-48 w-auto max-w-[88vw] sm:max-w-[560px] object-contain drop-shadow-[0_0_42px_rgba(239,68,68,0.75)]"
             />
 
             <a
@@ -255,6 +255,7 @@ export default function App() {
               className="relative"
             >
               <div className="absolute inset-0 bg-red-400/20 blur-3xl rounded-full" />
+
               <div className="relative rounded-[36px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-5 shadow-2xl shadow-black/30 overflow-hidden">
                 <div className="rounded-[28px] bg-gradient-to-br from-slate-950 via-red-950/40 to-slate-900 border border-white/10 p-6 min-h-[460px] flex flex-col justify-between">
                   <div className="flex justify-between items-start gap-4">
@@ -285,6 +286,7 @@ export default function App() {
                         <div className="w-12 h-12 rounded-2xl bg-red-500/20 border border-red-400/20 flex items-center justify-center shrink-0">
                           <Cuboid className="w-6 h-6 text-red-200" />
                         </div>
+
                         <div>
                           <h3 className="text-xl sm:text-2xl leading-tight font-black tracking-[-0.03em] max-w-[260px]">
                             Projektowanie modeli 3D
@@ -308,14 +310,15 @@ export default function App() {
                         <div className="w-12 h-12 rounded-2xl bg-red-500/20 border border-red-400/20 flex items-center justify-center shrink-0">
                           <Layers3 className="w-6 h-6 text-red-200" />
                         </div>
+
                         <div>
                           <h3 className="text-xl sm:text-2xl leading-tight font-black tracking-[-0.03em] max-w-[260px]">
                             Drukowanie w technologii FDM
                           </h3>
                           <p className="mt-4 text-slate-300 leading-8 text-[15px] sm:text-base max-w-md">
                             Wykonujemy trwałe i funkcjonalne wydruki z
-                            materiałów takich jak PLA, PETG, ABS, ASA oraz TPU —
-                            dobierając materiał do zastosowania, obciążenia i
+                            materiałów takich jak PLA, PETG, ABS, ASA oraz TPU
+                            — dobierając materiał do zastosowania, obciążenia i
                             warunków pracy.
                           </p>
                         </div>
@@ -328,10 +331,12 @@ export default function App() {
                       <p className="text-2xl font-black text-red-200">3D</p>
                       <p className="text-xs text-slate-300">druk</p>
                     </div>
+
                     <div className="rounded-2xl bg-white/10 border border-white/10 p-4">
                       <p className="text-2xl font-black text-red-200">CAD</p>
                       <p className="text-xs text-slate-300">projekt</p>
                     </div>
+
                     <div className="rounded-2xl bg-white/10 border border-white/10 p-4">
                       <p className="text-2xl font-black text-red-200">PRO</p>
                       <p className="text-xs text-slate-300">jakość</p>
@@ -435,6 +440,7 @@ export default function App() {
                   <div className="w-12 h-12 rounded-2xl bg-red-300/10 border border-red-300/20 flex items-center justify-center text-red-200">
                     <Icon className="w-6 h-6" />
                   </div>
+
                   <h3 className="mt-5 text-2xl font-black">{item.title}</h3>
                   <p className="mt-3 text-slate-400 leading-relaxed">
                     {item.text}
@@ -504,11 +510,11 @@ export default function App() {
                     <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-60" />
 
                     <div className="relative z-10">
-                      <div className="h-56 sm:h-64 rounded-2xl border border-white/10 overflow-hidden bg-gradient-to-br from-red-500/25 via-red-950/40 to-black/40 relative flex items-center justify-center">
+                      <div className="h-64 sm:h-72 rounded-2xl border border-white/10 overflow-hidden bg-black/40 relative flex items-center justify-center">
                         <img
                           src={item.image}
                           alt={item.title}
-                          className="absolute inset-0 w-full h-full object-contain p-2 opacity-95 group-hover:scale-105 transition duration-500"
+                          className="absolute inset-0 w-full h-full object-contain p-1 opacity-100 group-hover:scale-105 transition duration-500"
                         />
 
                         <div
@@ -518,10 +524,6 @@ export default function App() {
                               "radial-gradient(circle at 30% 20%, rgba(239,68,68,0.55), transparent 35%), linear-gradient(135deg, rgba(255,255,255,0.08), transparent)",
                           }}
                         />
-
-                        <div className="absolute left-4 bottom-4 text-xs uppercase tracking-[0.22em] text-red-100/70 font-bold drop-shadow">
-                          MakerWorld
-                        </div>
                       </div>
 
                       <div className="mt-5 flex items-start justify-between gap-3">
