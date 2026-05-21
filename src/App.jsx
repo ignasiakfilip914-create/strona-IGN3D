@@ -40,7 +40,7 @@ export default function App() {
   const [contactOpen, setContactOpen] = useState(false);
 
   const contact = {
-    brand: "Ign3D",
+    brand: "IGN3D",
     phone: "884832818",
     email: "kontakt.ign3d@gmail.com",
     whatsapp: "48884832818",
