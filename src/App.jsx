@@ -100,7 +100,7 @@ export default function App() {
       link: "https://makerworld.com/pl/models/2499913-ultimate18mm-corner-clamp-3rd-hand-woodworking-jig#profileId-2748056",
     },
     {
-      title: "Ignas Box Contener 3.0",
+      title: "Ignas Modular Box",
       subtitle: "modular storage container",
       image: "/makerworld/ignas-box.png",
       link: "https://makerworld.com/pl/models/2456880-ignas-box-contener-3-0#profileId-2697586",
@@ -182,7 +182,7 @@ export default function App() {
                           szybki kontakt
                         </p>
                         <h3 className="mt-2 text-2xl sm:text-3xl font-black tracking-[-0.04em]">
-                          Skontaktuj się z Ign3d
+                          Skontaktuj się z IGN3D
                         </h3>
                       </div>
 
@@ -261,7 +261,7 @@ export default function App() {
                   <div className="flex justify-between items-start gap-4">
                     <div className="flex flex-col gap-1">
                       <span className="text-xs uppercase tracking-[0.28em] text-red-200/70 font-bold">
-                        oferta Ign3d
+                        oferta IGN3D
                       </span>
                       <h2 className="mt-2 text-3xl font-black leading-tight">
                         Od projektu
@@ -282,6 +282,7 @@ export default function App() {
                       className="rounded-[30px] border border-white/10 bg-white/[0.06] p-6 sm:p-7 relative overflow-hidden min-h-[260px] flex items-center"
                     >
                       <div className="absolute top-0 right-0 w-40 h-40 bg-red-500/20 rounded-full blur-3xl" />
+
                       <div className="relative z-10 flex flex-col sm:flex-row gap-5 items-start">
                         <div className="w-12 h-12 rounded-2xl bg-red-500/20 border border-red-400/20 flex items-center justify-center shrink-0">
                           <Cuboid className="w-6 h-6 text-red-200" />
@@ -291,6 +292,7 @@ export default function App() {
                           <h3 className="text-xl sm:text-2xl leading-tight font-black tracking-[-0.03em] max-w-[260px]">
                             Projektowanie modeli 3D
                           </h3>
+
                           <p className="mt-4 text-slate-300 leading-8 text-[15px] sm:text-base max-w-md">
                             Tworzymy modele na podstawie szkiców, rysunków
                             technicznych, wymiarów, zdjęć lub rzeczywistego
@@ -306,6 +308,7 @@ export default function App() {
                       className="rounded-[30px] border border-white/10 bg-white/[0.06] p-6 sm:p-7 relative overflow-hidden min-h-[260px] flex items-center"
                     >
                       <div className="absolute bottom-0 left-0 w-40 h-40 bg-orange-500/10 rounded-full blur-3xl" />
+
                       <div className="relative z-10 flex flex-col sm:flex-row gap-5 items-start">
                         <div className="w-12 h-12 rounded-2xl bg-red-500/20 border border-red-400/20 flex items-center justify-center shrink-0">
                           <Layers3 className="w-6 h-6 text-red-200" />
@@ -315,6 +318,7 @@ export default function App() {
                           <h3 className="text-xl sm:text-2xl leading-tight font-black tracking-[-0.03em] max-w-[260px]">
                             Drukowanie w technologii FDM
                           </h3>
+
                           <p className="mt-4 text-slate-300 leading-8 text-[15px] sm:text-base max-w-md">
                             Wykonujemy trwałe i funkcjonalne wydruki z
                             materiałów takich jak PLA, PETG, ABS, ASA oraz TPU
@@ -375,7 +379,9 @@ export default function App() {
               className="rounded-3xl border border-white/10 bg-white/[0.05] p-6"
             >
               <ShieldCheck className="w-8 h-8 text-red-200" />
-              <h3 className="mt-5 text-xl font-black">Funkcjonalne wydruki</h3>
+              <h3 className="mt-5 text-xl font-black">
+                Funkcjonalne wydruki
+              </h3>
               <p className="mt-2 text-slate-400 leading-relaxed">
                 Stawiamy na praktyczne zastosowanie, trwałość i dopasowanie do
                 realnego problemu.
@@ -468,7 +474,7 @@ export default function App() {
                 </p>
 
                 <h2 className="mt-4 text-4xl sm:text-5xl font-black tracking-[-0.05em] leading-tight">
-                  Projekty Ign3d
+                  Projekty IGN3D
                   <span className="block text-red-400">na MakerWorld</span>
                 </h2>
 
@@ -510,19 +516,19 @@ export default function App() {
                     <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-60" />
 
                     <div className="relative z-10">
-                      <div className="relative w-full aspect-[4/3] min-h-[230px] md:min-h-[190px] rounded-2xl border border-white/10 overflow-hidden bg-black/60 flex items-center justify-center">
+                      <div className="relative w-full aspect-[4/3] min-h-[230px] md:min-h-[190px] rounded-2xl border border-white/10 overflow-hidden bg-black/70 flex items-center justify-center">
                         <img
                           src={item.image}
                           alt={item.title}
                           loading="eager"
-                          className="relative z-10 block w-full h-full object-contain p-1 opacity-100 group-hover:scale-105 transition duration-500"
+                          className="relative z-10 block w-full h-full object-cover opacity-100 group-hover:scale-105 transition duration-500"
                         />
 
                         <div
-                          className="absolute inset-0 pointer-events-none opacity-25"
+                          className="absolute inset-0 pointer-events-none opacity-20"
                           style={{
                             background:
-                              "radial-gradient(circle at 30% 20%, rgba(239,68,68,0.55), transparent 35%), linear-gradient(135deg, rgba(255,255,255,0.08), transparent)",
+                              "radial-gradient(circle at 30% 20%, rgba(239,68,68,0.45), transparent 35%), linear-gradient(135deg, rgba(255,255,255,0.06), transparent)",
                           }}
                         />
                       </div>
@@ -532,6 +538,7 @@ export default function App() {
                           <h3 className="font-black text-2xl md:text-lg leading-tight">
                             {item.title}
                           </h3>
+
                           <p className="text-base md:text-sm text-slate-400 mt-1">
                             {item.subtitle}
                           </p>
@@ -564,6 +571,7 @@ export default function App() {
               <p className="text-red-200 font-bold uppercase tracking-[0.25em] text-sm">
                 proces
               </p>
+
               <h2 className="mt-3 text-4xl sm:text-5xl font-black tracking-[-0.04em]">
                 Jak wygląda współpraca?
               </h2>
@@ -579,6 +587,7 @@ export default function App() {
                   <div className="w-9 h-9 rounded-xl bg-red-500 text-white flex items-center justify-center font-black shrink-0">
                     {index + 1}
                   </div>
+
                   <p className="text-slate-200 leading-relaxed">{item}</p>
                 </motion.div>
               ))}
@@ -599,8 +608,9 @@ export default function App() {
                 <h2 className="text-4xl sm:text-5xl font-black tracking-[-0.05em]">
                   Masz pomysł na wydruk?
                 </h2>
+
                 <p className="mt-4 text-white/80 text-lg leading-relaxed">
-                  Skontaktuj się z Ign3d. Wyślij opis, wymiary, zdjęcie albo
+                  Skontaktuj się z IGN3D. Wyślij opis, wymiary, zdjęcie albo
                   plik 3D — przygotujemy wycenę i doradzimy najlepsze
                   rozwiązanie.
                 </p>
